@@ -313,6 +313,13 @@ header
 		font-size: 17px
 		font-weight: 300
 		line-height: 24px
+	.warning
+		.require_title
+			color: $second_color
+		.require_list
+			li
+				&:before
+					background: url('../icons/red.png') center center/cover no-repeat
 
 .world
 	position: relative
@@ -334,7 +341,7 @@ header
 			color: #fff
 
 footer
-	padding: 12px 20px 10px 30px
+	padding: 12px 20px 10px 23px
 .footer
 	&_devider
 		width: 301px
@@ -342,45 +349,48 @@ footer
 		background-color: $main_color
 		margin: 0 auto
 	&_wrapper
+		margin-top: 30px
 		display: flex
 		justify-content: space-between
-		align-items: center
-	&_wrapper > div 
-		width: 33%
 		&:nth-child(3)
 			display: flex 
 			justify-content: flex-end
 
 	&_social
-		width: 160px
 		display: flex
 		justify-content: space-between
 		&_item 
 			display: flex 
 			justify-content: center
 			align-items: center
-			margin: 0 4px 
+			margin-right: 4px 
 			width: 32px
 			height: 32px
 			background-color: #070716
 			border-radius: 100%
+			a
+				color: #FFF
+				margin-top: 3px
+				margin-right: 1px
+
 			
 	&_links
-		width: 390px
-		margin: 0 auto
 		&_main 
 			display: flex 
 			justify-content: space-between
-			padding: 0 10px
+			margin-left: 125px
 			a 
 				color: #070716
 				font-size: 15px
 				font-weight: 300
 				text-transform: uppercase
+				&:nth-child(2)
+					margin: 0 45px 0 50px
 		&_sub 
 			display: flex 
 			justify-content: space-between
 			margin-top: 10px
+			margin-left: 125px
 			a 
 				color: #999999
 				font-size: 11px
@@ -391,6 +401,7 @@ footer
 			justify-content: center
 			align-items: center
 			margin-top: 20px
+			margin-left: 125px
 			color: #1FBAD6
 			text-align: center
 			font-size: 11px
