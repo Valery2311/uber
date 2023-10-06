@@ -313,14 +313,6 @@ header
 		font-size: 17px
 		font-weight: 300
 		line-height: 24px
-	.warning
-		.require_title
-			color: $second_color
-		.require_list
-			li
-				&::before
-					background: url('../icons/red.png') center center/cover no-repeat
-
 
 .world
 	position: relative
@@ -341,78 +333,70 @@ header
 			text-decoration: none
 			color: #fff
 
-
 footer
-	padding: 12px 21px 11px 23px
+	padding: 12px 20px 10px 30px
 .footer
 	&_devider
-		margin: 0 auto
 		width: 301px
 		height: 7px
-		background-color: #1FBAD6
-
+		background-color: $main_color
+		margin: 0 auto
 	&_wrapper
-		margin-top: 26px
 		display: flex
 		justify-content: space-between
 		align-items: center
+	&_wrapper > div 
+		width: 33%
 		&:nth-child(3)
 			display: flex 
 			justify-content: flex-end
 
 	&_social
+		width: 160px
 		display: flex
-		justify-content: flex-start
+		justify-content: space-between
 		&_item 
 			display: flex 
 			justify-content: center
 			align-items: center
-			color: white
 			margin: 0 4px 
 			width: 32px
 			height: 32px
 			background-color: #070716
 			border-radius: 100%
-			a
-				justify-content: center
-				align-items: center
-				color: white
-
 			
 	&_links
-		display: flex
-		flex-direction: column
+		width: 390px
+		margin: 0 auto
 		&_main 
 			display: flex 
-			justify-content: center
-			padding-left: 110px
+			justify-content: space-between
+			padding: 0 10px
 			a 
 				color: #070716
 				font-size: 15px
 				font-weight: 300
 				text-transform: uppercase
-				&:nth-child(2)
-					margin: auto 50px
 		&_sub 
 			display: flex 
-			justify-content: center
+			justify-content: space-between
 			margin-top: 10px
-			padding-left: 134px
 			a 
-				margin-right: 20px
 				color: #999999
 				font-size: 11px
 				font-weight: 300
 				text-transform: uppercase
-		&_lang 
-			display: block 
-			color: #1fbad6
+		&_lang
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-top: 20px
+			color: #1FBAD6
+			text-align: center
 			font-size: 11px
 			font-weight: 400
-			margin-top: 19px
 			text-transform: uppercase
 			text-align: center
-			padding-left: 85px
 
 	
 		
